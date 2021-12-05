@@ -1,0 +1,27 @@
+use std::fs;
+use std::vec;
+
+fn part1(filename: &str) -> Result<i32, String> {
+    match fs::read_to_string(filename)
+    {
+	Err(err) => Err(err.to_string()),
+	Ok(contents) => {
+	    let mut pos = 0;
+	    let mut depth = 0;
+
+	    for line in contents.lines() {
+		let splitted = line.split(' ');
+
+		let 
+	    }
+
+	    Ok(pos * depth)
+	}
+    }
+}
+
+fn main() {
+	let filename = "sample.txt";
+
+	part1(filename);
+}
